@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<jtlshopplugin>
+    <Name>Live Chat Helper Plugin</Name>
+    <Description>Einbindung des Live Helper Widget</Description>
+    <Author>Gingerbeard.3D</Author>
+    <URL>https://www.gingerbeard3d.de</URL>
+    <XMLVersion>001</XMLVersion>
+    <ShopVersion>5.0.0</ShopVersion>
+    <PluginID>gb3d_livehelperchat</PluginID>
+    <CreateDate>2023-12-05</CreateDate>
+    <Version>0.0.1</Version>
+    <Install>
+        <ServicesRequiringConsent>
+            <Vendor>
+                <ID>gb3d_livechathelper_consent</ID>
+                <Company>Live Helper Chat</Company>
+                <Localization iso="GER">
+                    <Name>Live Helper Chat</Name>
+                    <Purpose>Live Helper Chat Widget</Purpose>
+                    <Description>Der Webservice von Live Helper Chat ermöglicht direkten Chat Support mit dem Endkunden per Chat Widget folgende Daten werden verareitet: anonymisierte IP Adresse.</Description>
+                    <PrivacyPolicy>https://livehelperchat.com/gdpr-compliance-504a.html</PrivacyPolicy>
+                </Localization>
+                <Localization iso="ENG">
+                    <Name>Live Helper Chat</Name>
+                    <Purpose>Live Helper Chat Widget</Purpose>
+                    <Description>Der Webservice von Live Helper Chat ermöglicht direkten Chat Support mit dem Endkunden per Chat Widget folgende Daten werden verareitet: anonymisierte IP Adresse.</Description>
+                    <PrivacyPolicy>https://livehelperchat.com/gdpr-compliance-504a.html</PrivacyPolicy>
+                </Localization>
+            </Vendor>
+        </ServicesRequiringConsent>
+        <JS>
+            <file>
+                <name>livehelperchatwidget.js</name>
+            </file>
+        </JS>
+    </Install>
+</jtlshopplugin>
