@@ -23,7 +23,7 @@
                 <Localization iso="ENG">
                     <Name>Live Helper Chat</Name>
                     <Purpose>Live Helper Chat Widget</Purpose>
-                    <Description>Der Webservice von Live Helper Chat ermöglicht direkten Chat Support mit dem Endkunden per Chat Widget folgende Daten werden verareitet: anonymisierte IP Adresse.</Description>
+                    <Description>Der Webser23vice von Live Helper Chat ermöglicht direkten Chat Support mit dem Endkunden per Chat Widget folgende Daten werden verareitet: anonymisierte IP Adresse.</Description>
                     <PrivacyPolicy>https://livehelperchat.com/gdpr-compliance-504a.html</PrivacyPolicy>
                 </Localization>
             </Vendor>
