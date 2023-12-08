@@ -1,0 +1,6 @@
+msgid "Gingerbeard.3D"
+msgstr "@todo"
+
+msgid "Einbindung des Live Helper Widget"
+msgstr "@todo"
+
