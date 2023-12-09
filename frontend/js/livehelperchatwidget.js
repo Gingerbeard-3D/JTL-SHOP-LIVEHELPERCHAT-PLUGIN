@@ -12,13 +12,15 @@ function myConsentFunction(detail)
 {
     if (detail !== null && typeof detail.gb3d_livechathelper_consent !== 'undefined') {
         if (detail.gb3d_livechathelper_consent === true) {
+            //Here you need to add your Live Helper Chat embedded code snippet, without the <script></script> identifier please also add to the var po line the following attribute: po.id = 'lhc_widget_container'; this id makes it easier to hide the correct DOM Element
+            //TODO add a setting in the backend to make it easiert to add the embedded code from live helper chat widget
             LHC_API.args = {mode:'widget',lhc_base_url:'//gingerbeard3d.livehelperchat.com/',wheight:450,wwidth:350,pheight:520,pwidth:500,leaveamessage:true,check_messages:false,lang:'eng/'};
             (function() {
-            var po = document.createElement('script'); po.type = 'text/javascript'; po.setAttribute('crossorigin','anonymous'); po.async = true; po.id = 'lhc_widget_container'
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.setAttribute('crossorigin','anonymous'); po.async = true; po.id = 'lhc_widget_container';
             var date = new Date();po.src = '//gingerbeard3d.livehelperchat.com/design/defaulttheme/js/widgetv2/index.js?'+(""+date.getFullYear() + date.getMonth() + date.getDate());
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
             })();
-            console.log('gb3d_livechathelper_consent has consent!');
+            //console.log('gb3d_livechathelper_consent has consent!');
         } else {
             // Remove the LiveHelperChat widget script
             var scripts = document.getElementsByTagName('script');
